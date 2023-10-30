@@ -50,10 +50,10 @@ python scripts/amg.py --checkpoint sam_vit_h_4b8939.pth --model-type vit_h --con
 ### 3. Run our Count Anything engine with 1 GPU:
 Please use `--text_prompt [OBJ]` to specify the customized class for counting.
 ```bash
-python scripts/main.py --out_dir=output --world_size=1 --save_img --text_prompt="shirt" --data_dir=data/examples 
+python scripts/visual.py --out_dir=output --world_size=1 --save_img --text_prompt="shirt" --data_dir=data/examples 
 ```
 ```bash
-python scripts/main.py --out_dir=output --world_size=1 --save_img --text_prompt="person" --data_dir=data/crowd_examples/ 
+python scripts/visual.py --out_dir=output --world_size=1 --save_img --text_prompt="person" --data_dir=data/crowd_examples/ 
 ```
 The result is saved in `output` folder.
 
